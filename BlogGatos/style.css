@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --color-base-cian: #086c8d;
+  --color-cian: #387E96;
+  --color-base-black: #121214;
+  --color-gray: #202024;
+  --color-base-white: #ffffff;
+}
+
+:root {
+  font-size: 62.5%;
+  background-color: var(--color-base-white);
+}
+
+#app {
+  height: 100vh;
+}
+
+body {
+  max-width: 43rem;
+  font-family: 'Mulish', sans-serif;
+  margin-inline: auto;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+}
+
+body, input {
+  font-family: 'Mulish', sans-serif;
+}
+
+header {
+  padding: 1.2rem 4rem 1.2rem 4rem;
+  max-width: (43rem, 100%);
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  background-color: var(--color-base-cian);
+}
+
+header form {
+  flex: 1;
+}
+
+.input-wrapper input {
+  font-size: 1.6rem;
+  font-weight: 600;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+  gap: 1.2rem;
+  border: none;
+  border-radius: .4rem;
+  background-color: var(--color-cian);
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper ::placeholder {
+  color: var(--color-base-white);
+  font-weight: 600;
+}
+
+.cat {
+  width: 43rem;
+  height: 22rem;
+  border-radius: .5rem;
+}
+
+.button {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+}
+
+button {
+  background-color: var(--color-base-white);
+  border: none;
+}
+
+h1 {
+  color: var(--color-gray);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.9rem;
+  margin-left: 2.2rem;
+}
+
+h2 {
+  margin-bottom: 3.2rem;
+  margin-left: 2.2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-gray);
+  line-height: 3.84rem;
+}
+
+h3 {
+  padding-bottom: .7rem;
+}
+
+p {
+  margin-right: 2.6rem;
+  margin-bottom: 3.4rem;
+  margin-left: 2.2rem;
+  color: var(--color-base-black);
+  font-weight: 400;
+  line-height: 2.9rem;
+  font-size: 1.6rem;
+}
+
+.item {
+  color: var(--color-base-black);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.24rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding-bottom: 3.4rem;
+  margin-right: 2.4rem;
+  margin-left: 2.2rem;
+}
+
+.item img {
+  width: 15rem;
+  height: 8.4rem;
+}
+
+.span {
+  color: var(--color-base-black);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.24rem;
+}
+
+.footer {
+  color: var(--color-base-white);
+  display: flex;
+  width: 43rem;
+  height: 6.4rem;
+  padding: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-base-cian);
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+@media (min-width: 80rem) {
+  body {
+    max-width: 100%;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: (3, 1fr);
+    justify-content: center;
+    grid-template-areas: "A A A" "B B C" "D D D";
+  }
+
+  #app .header {
+    grid-area: A;
+  }
+
+  #app .main {
+    grid-area: B;
+  }
+
+  #app .aside {
+    grid-area: C;
+  }
+
+  #app .footer-class {
+    grid-area: D;
+  }
+
+  main {
+    width: 100%;
+    margin-top: 4.4rem;
+  }
+
+  .cat {
+    width: 80rem;
+    height: 40rem;
+    margin-top: 4.4rem;
+    object-fit: cover;
+  }
+
+  .astronautas {
+    display: flex;
+    align-items: center;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+    gap: 33rem;
+  }
+
+  .feedback > :first-child {
+    margin-right: 1.2rem;
+  }
+
+  .main {
+    width: 80rem;
+  }
+
+  .aside {
+    margin-top: 4.4rem;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  div .tags {
+    width: 21.5rem;
+    height: 5.4rem;
+  }
+
+  .feedback img:hover {
+    cursor: pointer;
+    filter: contrast(155%) saturate(200%);
+    transform: scale(1.1) rotate(4deg);
+  }
+
+  .item img:hover {
+    filter: contrast(155%) saturate(200%);
+    transform: scale(1.1) rotate(4deg);
+  }
+
+  .item {
+    --delay: .4s;
+    animation: appear .4s var(--delay) backwards;
+  }
+
+  .astronauta {
+    display: inline-flex;
+    align-items: center;
+    gap: 36rem;
+  }
+
+  header {
+    padding: 1.2rem 20rem 1.2rem 20rem;
+    max-width: (43rem, 100%);
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: var(--color-base-cian);
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: scale(0.2);
+    }
+
+    50% {
+      transform: scale(2);
+    }
+  }
+}
