@@ -8,8 +8,6 @@ Bem-vindo ao meu mais recente projeto de desenvolvimento web! 📱💻
 
 Este projeto é uma aplicação web responsiva desenvolvida com a abordagem Mobile First. A ideia por trás do Mobile First é projetar e desenvolver inicialmente para dispositivos móveis e, em seguida, expandir para dispositivos maiores, como tablets e desktops. Isso garante uma experiência de usuário otimizada em todos os dispositivos.
 
-[![2024-05-24-20-29-17.gif](https://i.postimg.cc/RCbPjBP6/2024-05-24-20-29-17.gif)](https://postimg.cc/9zZt7vHC)
-
 ---
 
 ## Funcionalidades
@@ -21,8 +19,8 @@ Este projeto é uma aplicação web responsiva desenvolvida com a abordagem Mobi
 
 ## Tecnologias Utilizadas
 
-- **HTML5:** Utilizado para a estruturação semântica da página.
-- **CSS3:** Responsável pela estilização e layout responsivo utilizando técnicas como flexbox e media queries.
+- <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/> **HTML5:** Utilizado para a estruturação semântica da página.
+- <img src="https://img.icons8.com/color/48/000000/css3.png"/> **CSS3:** Responsável pela estilização e layout responsivo.
 
 ---
 
@@ -30,5 +28,5 @@ Este projeto é uma aplicação web responsiva desenvolvida com a abordagem Mobi
 
 Se desejar entrar em contato ou saber mais sobre mim, sinta-se à vontade para me encontrar nas seguintes redes sociais:
 
-- [GitHub](https://github.com/seu-usuario)
-- [LinkedIn](https://www.linkedin.com/in/seu-nome/)
+- [GitHub](https://github.com/rabellog)
+- [LinkedIn](https://www.linkedin.com/in/gabriel-antunes-rabello-013379268)
